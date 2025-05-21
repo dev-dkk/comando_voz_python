@@ -47,7 +47,7 @@ def open_application(app_name):
             falar(f"Erro ao abrir {app_name}: {e}")
             return False
     else:
-        falar(f"Aplicativo {app_name} não configurado")
+        falar(f"ops, Aplicativo {app_name} não configurado")
         return False
 
 def abrir_com_comando():
@@ -62,7 +62,7 @@ def abrir_com_comando():
             command = recognizer.recognize_google(audio, language='pt-BR').lower()
             falar(f"Comando reconhecido: {command}")
             
-            # Verifica comandos para abrir aplicativos
+            # Verifica comandos para abrir aplicativoss
             if 'abrir' in command or 'iniciar' in command or 'open' in command:
                 app_name = command.split('abrir')[-1].split('iniciar')[-1].strip()
                 
