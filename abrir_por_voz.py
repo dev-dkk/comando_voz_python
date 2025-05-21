@@ -62,7 +62,7 @@ def abrir_com_comando():
             command = recognizer.recognize_google(audio, language='pt-BR').lower()
             falar(f"Comando reconhecido: {command}")
             
-            # Verifica comandos para abrir aplicativos
+            # Verifica comandos para abrir aplicativoss
             if 'abrir' in command or 'iniciar' in command or 'open' in command:
                 app_name = command.split('abrir')[-1].split('iniciar')[-1].strip()
                 
