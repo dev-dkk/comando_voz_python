@@ -47,7 +47,7 @@ def open_application(app_name):
             falar(f"Erro ao abrir {app_name}: {e}")
             return False
     else:
-        falar(f"Aplicativo {app_name} não configurado")
+        falar(f"ops, Aplicativo {app_name} não configurado")
         return False
 
 def abrir_com_comando():
